@@ -1,11 +1,13 @@
+import React from 'react';
 import './App.css';
+import AppRoutes from '../src/router/AppRoutes.jsx';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>Quai Antique Restaurant</h1>
+      <AppRoutes />
     </div>
   );
-}
+};
 
 export default App;
