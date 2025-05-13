@@ -1,4 +1,9 @@
+import React from 'react';
+
 const Footer = () => {
-  <h1>Footer</h1>
+  return (
+    <p>&copy; 2025 Quai Antique</p>
+  );
 }
+
 export default Footer;
