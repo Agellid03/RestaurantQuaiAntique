@@ -1,0 +1,31 @@
+header{
+  background-color: var(--color-dark);
+  padding: 20px 40px;
+  color: white;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav li {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+nav a{
+  color: white;
+  transition: color 0.3s ease;
+}
+
+nav a:hover{
+  color: var(--color-primary);
+}

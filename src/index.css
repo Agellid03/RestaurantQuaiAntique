@@ -1,39 +1,50 @@
+/* Variables CSS globales */
+:root {
+  --color-primary: #906427;
+  --color-dark: #3a2d26;
+  --color-light: #f4f4f4;
+  --text-color: #333;
+  --font-heading: 'Montserrat', serif;
+  --font-body: 'Hind Madurai', sans-serif;
+}
+
 /* Reset CSS simple */
 * {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* Police Globale */
+/* Police globale */
 body {
-  font-family: "Hind Madurai", serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: var(--font-body);
+  background-color: var(--color-light);
+  color: var(--text-color);
   line-height: 1.6;
 }
 
+/* Titres */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
 /* Liens */
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
 /* Boutons */
-
-button{
+button {
   border: none;
-  background-color: #906427;
+  background-color: var(--color-primary);
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
   cursor: pointer;
 }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-}
-
+/* Helpers : Images et listes */
 img {
   max-width: 100%;
   height: auto;
@@ -44,4 +55,3 @@ ul {
   list-style: none;
   padding: 0;
 }
-

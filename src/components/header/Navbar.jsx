@@ -4,13 +4,18 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav>
+      <h2>
+        <a href="/">Quai Antique</a>
+      </h2>
       <ul>
         <li>
           <Link to="/">Acceuil</Link>
         </li>
+
         <li>
           <Link to="/menu">Menu</Link>
         </li>
+
         <li>
           <Link to="/reservation">Reservation</Link>
         </li>
