@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav>
-      <h2>
-        <a href="/">Quai Antique</a>
+      <h2 className="logo">
+        <Link to="/">Quai Antique</Link>
       </h2>
-      <ul>
+      <button className="burger" onClick={() => setIsOpen(!isOpen)}>
+        ☰
+      </button>
+
+      <ul className={isOpen ? 'nav-links open' : 'nav-links'}>
         <li>
           <Link to="/">Acceuil</Link>
         </li>

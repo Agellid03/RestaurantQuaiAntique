@@ -15,6 +15,20 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 /* Police globale */
 body {
   font-family: var(--font-body);

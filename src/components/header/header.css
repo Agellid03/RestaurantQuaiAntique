@@ -4,46 +4,83 @@ header{
   color: white;
 }
 
-nav{
+nav {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  position: sticky;
+  background-color: var(--color-dark);
+  padding: 20px;
+  gap: 15px;
 }
 
-nav ul{
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+nav ul {
   display: flex;
-  gap: 30px;
-  list-style: none;
-  text-align: center;
+  flex-direction: column; /* important pour mobile */
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
 }
 
 nav li {
-  font-size: 1rem;
+  list-style: none;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
-nav a{
+nav a {
+  font-family: var(--font-heading);
   color: white;
   transition: color 0.3s ease;
 }
 
-nav a:hover{
+nav a:hover {
   color: var(--color-primary);
 }
+
+.nav-links{
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links.open{
+  display: flex;
+}
+
+
+
+/* CSS pour desktop commence içi */
 
 @media (min-width: 768px) {
   nav {
     flex-direction: row;
     justify-content: space-between;
   }
-}
 
-/* Desktop (à partir de 768px) */
-@media (min-width: 768px) {
   nav ul {
     flex-direction: row;
-    gap: 30px;
     justify-content: flex-end;
+    gap: 30px;
+  }
+
+  .burger{
+    display: none;
+  }
+
+  .nav-links{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
   }
 }
