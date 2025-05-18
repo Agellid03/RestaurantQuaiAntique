@@ -24,6 +24,18 @@ const Home = () => {
           </p>
         </div>
       </section>
+
+      <section className="fresh">
+        <dv className="fresh-text">
+          <h3>Des produits frais et de qualité !</h3>
+          <p>
+            {' '}
+            Nous sélectionnons nos ingrédients auprès de producteurs locaux pour
+            vous offrir une cuisine de saison, authentique et savoureuse.
+          </p>
+        </dv>
+        <img src="/images/Saumon.jpg" alt="" />
+      </section>
     </>
   );
 };
