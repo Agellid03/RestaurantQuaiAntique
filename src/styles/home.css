@@ -1,0 +1,82 @@
+.hero {
+  position: relative;
+  padding: 40px 20px;
+  height: 60vh;          /* Hauteur responsive */
+  max-height: 500px;     /* Hauteur max */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centre verticalement le contenu */
+  gap: 20px;
+  color: white;
+  overflow: hidden;
+
+  background-image: url('../../public/images/Food.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;         /* Remplit la zone, mais peut zoomer */
+  background-position: center 40%; /* Recentre l’image un peu vers le haut */
+  background-attachment: fixed;  /* Optionnel : fixe l’image pour effet parallax */
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(58, 45, 38, 0.6),
+    rgba(58, 45, 38, 0.3)
+  );
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+.hero-title{
+font-family: var(--font-heading);
+font-size: 2.5rem;
+margin-top: 20px;
+
+}
+
+.hero p{
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--color-light);
+  margin-bottom: 20px;
+  font-size: 1rem;
+  
+}
+
+.cta-reserver {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  max-width: max-content;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.cta-reserver:hover {
+  background-color: #b07328;
+  transform: scale(1.05);
+}
+
+
+
+
+@media (min-width: 768px) {
+  .hero p {
+    font-size: 1.4rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+}
