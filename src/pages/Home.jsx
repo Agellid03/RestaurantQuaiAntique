@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <section className="hero">
         <h2 className="hero-title">Bienvenue au Quai Antique</h2>
-        <p>Le chef Arnaud Michant vous invite Quai Antique</p>
+        <p>Le chef Arnaud Michant vous invite au Quai Antique</p>
         <Link to="/reservation" className="cta-reserver">
           Reserver
         </Link>
@@ -22,18 +22,23 @@ const Home = () => {
             cuisine raffinée et authentique, entre tradition et créativité, dans
             un cadre chaleureux et soigné.
           </p>
+          <Link to="/menu" className="cta-menu">
+            Nos Menus
+          </Link>
         </div>
       </section>
 
       <section className="fresh">
-        <dv className="fresh-text">
+        <div className="fresh-text">
           <h3>Des produits frais et de qualité !</h3>
           <p>
-            {' '}
             Nous sélectionnons nos ingrédients auprès de producteurs locaux pour
             vous offrir une cuisine de saison, authentique et savoureuse.
           </p>
-        </dv>
+          <Link to="/galerie" className="cta-galerie">
+            Notre galerie
+          </Link>
+        </div>
         <img src="/images/Saumon.jpg" alt="" />
       </section>
     </>

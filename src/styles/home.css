@@ -99,6 +99,27 @@ margin-top: 20px;
   margin: 0 auto;
 }
 
+.cta-menu {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  max-width: max-content;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: 15%;
+}
+
+.cta-menu:hover {
+  background-color: #b07328;
+  transform: scale(1.05);
+}
+
+
 .fresh {
   background-color: var(--color-dark);
   color: white;
@@ -129,7 +150,25 @@ margin-top: 20px;
   margin: 0 auto;
 }
 
+.cta-galerie {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  max-width: max-content;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: 15%;
+}
 
+.cta-galerie:hover {
+  background-color: #b07328;
+  transform: scale(1.05);
+}
 
 
 
@@ -140,6 +179,9 @@ margin-top: 20px;
 
   .hero-title {
     font-size: 3rem;
+  }
+  .cta-reserver{
+    font-size: x-large;
   }
 }
 
