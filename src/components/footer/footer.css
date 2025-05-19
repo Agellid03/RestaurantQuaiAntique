@@ -18,3 +18,10 @@ footer{
   margin-bottom: 10px;
   color: var(--color-primary);
 }
+
+ /* -------- FOOTER -------- */
+  footer {
+    padding: 30px 60px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
