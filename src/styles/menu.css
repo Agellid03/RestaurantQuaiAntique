@@ -1,0 +1,64 @@
+.menu-page {
+  padding: 40px 20px;
+  background-color: var(--color-light);
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-family: var(--font-heading);
+}
+
+.menu-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.plat-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+.plat-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.plat-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.prix {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+.plat-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+
+
+@media (min-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 40px;
+  }
+
+  .menu-title {
+    font-size: 2.5rem;
+  }
+
+  .plat-card {
+    padding: 30px;
+  }
+}
