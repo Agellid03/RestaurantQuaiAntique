@@ -35,14 +35,33 @@ const Home = () => {
 
       {/* Section PRODUITS FRAIS */}
       <section className="fresh">
+        <img src="/images/Saumon.jpg" alt="Produit frais" />
         <div className="fresh-text">
-          <h3>Des produits frais et de qualité</h3>
+          <h3>Le restaurant</h3>
           <p>
             Nous sélectionnons nos ingrédients auprès de producteurs locaux pour
-            vous offrir une cuisine de saison, authentique et savoureuse.
+            vous offrir une cuisine de saison, authentique et savoureuse. Le
+            chef Michant se réjouit de vous recevoir.
           </p>
+          <Link to="/galerie" className="cta-galerie">
+            Notre histoire & Galerie
+          </Link>
         </div>
-        <img src="/images/Saumon.jpg" alt="Produit frais" />
+      </section>
+
+      <section className="events">
+        <img src="/images/Resto.jpg" alt="" />
+        <div className="events-text">
+          <h3>Acceuillir vos événements</h3>
+          <p>
+            Contactez-nous pour l'organisation d'un repas d'affaires ou la
+            privatisation du restaurant Quai Antique pour votre prochain
+            évévenment
+          </p>
+          <Link to="/events" className="cta-events">
+            En savoir plus
+          </Link>
+        </div>
       </section>
     </>
   );
