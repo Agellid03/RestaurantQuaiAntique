@@ -43,7 +43,7 @@ const Home = () => {
             vous offrir une cuisine de saison, authentique et savoureuse. Le
             chef Michant se réjouit de vous recevoir.
           </p>
-          <Link to="/galerie" className="cta-galerie">
+          <Link to="/about" className="cta-galerie">
             Notre histoire & Galerie
           </Link>
         </div>
