@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const Histoire = () => {
+const About = () => {
   return (
     <section className="about-page">
       <div className="about-text">
@@ -47,4 +47,4 @@ const Histoire = () => {
   );
 };
 
-export default Histoire;
+export default About;
