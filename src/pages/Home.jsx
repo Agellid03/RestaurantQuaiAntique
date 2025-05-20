@@ -18,7 +18,7 @@ const Home = () => {
       </section>
 
       {/* Section PRÉSENTATION */}
-      <section className="presentation">
+      <section className="presentation fade-in">
         <img src="/images/Presentation.jpg" alt="Présentation du restaurant" />
         <div className="presentation-text">
           <h3>Une cuisine de caractère</h3>
@@ -34,7 +34,7 @@ const Home = () => {
       </section>
 
       {/* Section PRODUITS FRAIS */}
-      <section className="fresh">
+      <section className="fresh fade-in">
         <img src="/images/Saumon.jpg" alt="Produit frais" />
         <div className="fresh-text">
           <h3>Le restaurant</h3>
@@ -49,7 +49,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="events">
+      <section className="events fade-in">
         <img src="/images/Resto.jpg" alt="" />
         <div className="events-text">
           <h3>Acceuillir vos événements</h3>

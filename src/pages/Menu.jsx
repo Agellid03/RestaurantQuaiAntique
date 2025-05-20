@@ -47,7 +47,7 @@ const Menu = () => {
       <h2 className="menu-title">Notre carte</h2>
       <div className="menu-grid">
         {plats.map((plat, index) => (
-          <div className="plat-card" key={index}>
+          <div className="plat-card fade-in" key={index}>
             <img src={plat.img} alt={plat.nom} className="plat-image" />
             <h3>{plat.nom}</h3>
             <p>{plat.description}</p>
