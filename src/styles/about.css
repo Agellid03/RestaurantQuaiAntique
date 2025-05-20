@@ -1,0 +1,25 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 20px;
+  align-items: center;
+  background-color: var(--color-light);
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+.about-carrousel {
+  width: 90%;
+  max-width: 700px;
+}
+
+.about-carrousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
