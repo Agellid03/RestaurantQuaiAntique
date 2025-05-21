@@ -6,6 +6,9 @@ footer{
   justify-content: space-between;
   flex-wrap: wrap;
   font-size: 1rem;
+  padding: 30px 60px;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
 .footer-colum{
@@ -19,9 +22,3 @@ footer{
   color: var(--color-primary);
 }
 
- /* -------- FOOTER -------- */
-  footer {
-    padding: 30px 60px;
-    text-align: center;
-    font-size: 0.9rem;
-  }

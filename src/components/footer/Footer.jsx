@@ -18,7 +18,8 @@ const Footer = () => {
           <p>QuaiAntiqueRestaurant@gmail.com</p>
         </div>
         <div className="footer-column">
-          <p>&copy; 2025 Quai Antique</p>
+          <h4>Crée par</h4>
+          <p> Verso pour le &copy; 2025 Quai Antique</p>
         </div>
       </footer>
     </>
